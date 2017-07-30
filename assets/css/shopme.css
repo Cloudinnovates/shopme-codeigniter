@@ -1,0 +1,387 @@
+body{
+	overflow:none;
+	margin: 0px;
+}
+
+.navbuttop{
+	border:5px solid black;
+	border-radius:100px;
+	padding:10px 30px;
+	background-color: #FFF000;
+	color: black;
+}
+
+.navbuttop:hover{
+	background-color: orange;
+}
+
+.maindiv{
+	border: 3px solid black;
+	padding: 0px;
+}
+
+.searchbox{
+	margin-left: 20px;
+	padding: 5px 10px;
+	display: inline-block;
+	position:relative;
+	height:45px;
+	width: 70%;
+	background-color:#fff;
+	border:3px solid #00FF00;
+	border-radius: 10px;
+	color: #00FF00;
+	font-size : 2em;
+}
+
+.searchbox:focus{
+	border:3px solid yellow;
+	border-radius: 50px;
+	box-shadow: 5px green;
+}
+.submitbtn{
+	margin-left: 5px;
+	display: inline-block;
+	position:relative;
+	height:55px;
+	padding:5px 10px;
+	background:#FFF000;
+	font-size : 2em;
+	border:3px solid #00FF00;
+	border-radius: 25px;
+}
+.hr{
+	border:1px solid black;
+	width: 100%;
+	position: relative;
+}
+
+
+#shopboxbtn span:after
+{
+	content: " ";
+	padding: 0px;
+    position: absolute;
+    top: 75%;
+    right: 40%;
+    border-width: 15px 20px;
+    border-style: solid;
+    border-color: #fff000 transparent transparent transparent;
+    z-index:3;
+    opacity:1;
+}
+#shopboxbtn:hover span:after
+{
+opacity:0;
+}
+
+.navbuttop span:after
+{
+	content: ">>";
+	padding-left: 10px;
+    opacity:0;
+}
+
+@keyframes navbuttop {
+    from {padding-left: 10px;}
+    to {padding-left: 20px;}
+}
+
+.navbuttop:hover span:after
+{
+opacity:1;
+animation: navbuttop 0.5s linear 0s;
+}
+
+
+
+.shopboxdata{
+	border-radius: 500px;
+	padding: 0px;
+	display: none;
+	position: relative;
+	top: 0px;
+	margin: 0px;
+	background-color: black;
+}
+
+.shopboxitem{
+	margin:50px;
+	border:3px solid green;
+	border-radius:100px;
+	padding:10px 50px;
+	background-color: #FFF000;	
+	color: black;
+	text-height:2em;
+}
+
+.shopboxitem:hover{
+	background-color: orange;
+}
+
+.shopboxitem span:after
+{
+	content: ">>";
+	padding-left: 10px;
+    opacity:0;
+}
+
+@keyframes example {
+    from {padding-left: 0px;}
+    to {padding-left: 30px;}
+}
+
+.shopboxitem:hover span:after
+{
+opacity:1;
+
+animation: example 0.5s linear 0s;
+}
+
+
+.catboxdata{
+	border:3px solid black;
+	box-shadow: 5px 15px grey;
+	border-radius: 100px;
+	padding: 0px;
+	position: relative;
+	top: 0px;
+	margin: 0px;
+	background-color: #16ab0d;
+}
+
+.catboxdata:hover{
+	box-shadow: 10px 10px grey;
+	background-color: green;
+	cursor: pointer;
+}
+
+.catboxitem{
+	display: block;
+	border:3px solid green;
+	border-radius:100px;
+	padding:10px 50px;
+	margin:30px 0px;
+	background-color: #FFF000;	
+	color: black;
+	text-height:2em;
+}
+
+.catboxitem:hover{
+	background-color: orange;
+}
+
+.catboxitem span:after
+{
+	content: ">>";
+	padding-left: 10px;
+    opacity:0;
+}
+
+@keyframes catboxit {
+    from {padding-left: 0px;}
+    to {padding-left: 30px;}
+}
+
+.catboxitem:hover span:after
+{
+opacity:1;
+animation: catboxit 0.5s linear 0s;
+}
+
+.itembox-short{
+	width: 100%;
+	border:5px solid black;
+	border-radius: 100px;
+	background-color: green;
+}
+
+.item-short{
+	border:3px solid black;
+	margin: 30px;
+	padding: 20px;
+}
+
+#mydetailsbtn span:after
+{
+	content: " ";
+	padding: 0px;
+    position: absolute;
+    top: 75%;
+    right: 40%;
+    border-width: 15px 20px;
+    border-style: solid;
+    border-color: #fff000 transparent transparent transparent;
+    z-index:3;
+    opacity:1;
+}
+#mydetailsbtn:hover span:after
+{
+opacity:0;
+}
+
+
+	#chatmain{
+		position:fixed;
+		min-width: 350px;
+		height: 350px;
+		bottom: -310px;
+		right: 0;
+		z-index: 1000;
+	}
+	#chatbody{
+		height: 250px;
+		overflow-y: scroll;
+	}
+	#chattoggle{
+		height: 40px;
+		cursor: pointer;
+	}
+	#chatfooter{
+		height: 50px;
+	}
+    #chatclose{
+        z-index: 1000;
+    }
+
+    .leftmsg{
+    	float: left;
+    	width: 70%;
+    	margin: 20px 30px 20px 5px;
+    	border: 1px solid black;
+    	color:green;
+    	background-color: yellow;
+    	padding: 5px 15px;
+    	border-radius: 50px;
+    }
+
+    #messagelist{
+    	width: 100%;
+    	padding: 0px;
+		list-style-type: none;
+		overflow-x: auto;
+    }
+
+    .rightmsg{
+    	float: right;
+    	width: 70%;
+    	margin: 20px 5px 20px 30px;
+    	border: 1px solid black;
+    	color:green;
+    	background-color: yellow;
+    	padding: 5px 15px;
+    	border-radius: 50px;
+    }
+
+    .chatter{
+    	color: black;
+    	font-size: 1.2em;
+    	padding-left: 10px;
+    }
+
+ #viewsad{
+ 	position: fixed;
+ 	top:100px;
+ 	left:0px;
+ 	border: 3px solid black;
+ 	background-color: skyblue;
+ 	width:200px;
+ 	color: black;
+ 	font-size: 1.3em;
+ 	padding: 25px;
+ 	border-radius: 0px 50px 50px 0px;
+ 	z-index: 100000;
+ 	cursor: pointer;
+ }
+
+ @keyframes viewsadbar {
+    from {left: 0px;}
+    to {left:-150px;}
+}
+
+ #viewsad:hover{
+ 	-webkit-animation: viewsadbar 2s forwards;
+ }
+
+  #walletad{
+ 	position: fixed;
+ 	top:100px;
+ 	right:0px;
+ 	border: 3px solid black;
+ 	background-color: skyblue;
+ 	width:200px;
+ 	color: black;
+ 	font-size: 1.3em;
+ 	padding: 25px;
+ 	border-radius: 50px 0px 0px 50px;
+ 	z-index:100000;
+ 	cursor: pointer;
+ }
+
+ @keyframes walletadbar {
+    from {right: 0px;}
+    to {right:-150px;}
+}
+
+ #walletad:hover{
+ 	-webkit-animation: walletadbar 2s forwards;
+ }
+
+ #topad{
+ 	display: none;
+ 	position: fixed;
+ 	bottom:50px;
+ 	left:50px;
+ 	border: 3px solid black;
+ 	background-color: skyblue;
+ 	width:50px;
+ 	padding: 10px;
+ 	color: black;
+ 	font-size: 1.3em;
+ 	border-radius: 50px;
+ 	z-index:100000;
+ 	cursor: pointer;
+ }
+
+ #adminchatlist{
+ 	position: fixed;
+ 	left: 0px;
+ 	top: 250px;
+ 	width: 200px;
+ 	height: 300px;
+ 	overflow-y: scroll;
+ 	background-color: grey;
+ 	border:2px solid black;
+ 	border-radius: 10px;
+ 	padding: 5px;
+ }
+
+ #adminchatlist > ul{
+ 	list-style-type: none;
+ 	margin:5px;
+ 	padding:0px;
+ }
+
+ #adminchatlist > ul > li {
+ 	display: block;
+ 	border:2px solid black;
+ 	width:100%;
+ 	background-color: gold;
+ 	padding: 5px 10px;
+ 	margin:10px 5px;
+ 	border-radius: 20px;
+ 	cursor:pointer;
+ }
+
+ #adminchatlist > ul > li :hover{
+ 	
+ 	background-color: yellow;
+ 	
+ }
+
+ .shopsdisplay{
+ 	border:3px solid black;
+ 	border-radius: 50px;
+ 	margin: 20px;
+ 	padding: 50px;
+ }
